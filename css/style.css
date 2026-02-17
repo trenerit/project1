@@ -3,3 +3,37 @@
 #3B668C - jasny granat
 #575915 - zielony
 */
+
+* {
+    font-family: "Kanit", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 300vh;
+}
+
+header {
+    height: 100vh;
+    background: url('../assets/img/gory_alpy.webp') center/cover fixed;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    position: relative;
+}
+
+h1 {
+   font-weight: 400; 
+   text-align: center;
+   /* text-shadow: 0 0 45px red; */
+   z-index: 1;
+}
+
+.bg-header {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+}
