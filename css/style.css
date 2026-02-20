@@ -24,16 +24,61 @@ header {
     position: relative;
 }
 
-h1 {
-   font-weight: 400; 
-   text-align: center;
-   /* text-shadow: 0 0 45px red; */
-   z-index: 1;
+.box {
+    z-index: 1;
+    /* border: 1px solid #fff; */
+    min-width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
+
+h1 {
+   font-weight: 400;
+   /* text-shadow: 0 0 45px red; */
+   flex-basis: 25%;
+
+}
+
 
 .bg-header {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.52);
     position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+.btn-cta {
+    padding: 20px;
+    /* border: 1px solid; */
+    width: 200px;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #3b668cd3;
+    transition: 0.5s;
+}
+
+.btn-cta:hover {
+    background-color: #3B668C;
+    transform: translateY(-6px);
+}
+
+@media all and (min-width:800px)  {
+    h1 {
+        flex-basis: 15%;
+        font-size: 80px;
+    }
+    
+    .btn-cta {
+        font-size: 32px;
+    }
 }
