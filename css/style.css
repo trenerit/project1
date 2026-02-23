@@ -8,6 +8,10 @@
     font-family: "Kanit", sans-serif;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     margin: 0;
     height: 300vh;
@@ -16,8 +20,33 @@ body {
 nav {
     display: flex;
     align-items: center;
-    background-color: crimson;
+    background-color: whitesmoke;
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid #0d0d0d;
+}
+
+.logo img {
+    height: 90px;
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.menu span {
+    color: #0d0d0d;
+    /* font-size: 280%; */
+    font-size: 4rem;
+    cursor: pointer;
 }
 
 nav div {
@@ -26,6 +55,35 @@ nav div {
 
     display: flex;
     align-items: center;
+}
+
+.menu-box-items {
+    position: fixed;
+    right: 0;
+    top: 80px;
+    z-index: 3;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    text-align: center;
+    flex-basis: 10%;
+    /* border-bottom: 1px solid gray; */
 }
 
 header {
@@ -86,6 +144,15 @@ a {
     transform: translateY(-6px);
 }
 
+section {
+    min-height: 80vh;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
 @media all and (min-width:800px)  {
     h1 {
         flex-basis: 15%;
@@ -94,5 +161,9 @@ a {
     
     .btn-cta {
         font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 4.5rem;
     }
 }
