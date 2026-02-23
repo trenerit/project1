@@ -2,6 +2,16 @@
 
 console.log('start');
 
+function clickHamburger() {
+    // alert('test');
+    const menuArea = document.querySelector('.menu-box-items');
+    menuArea.style.display = 'flex';
+}
+
+const hamburger = document.querySelector('nav .material-icons');
+
+hamburger.addEventListener('click', clickHamburger);
+
 // function fn1() {
 //     console.log('sdfwefmnlksxmlk09809ujlksjelkqj');
 // }
