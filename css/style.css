@@ -66,14 +66,21 @@ nav div {
     right: 0;
     top: 80px;
     z-index: 3;
-    background-color: whitesmoke;
+    background-color: #0d0d0d;
+    color: whitesmoke;
     height: 100vh;
     width: 100%;
-    /* display: none; */
+    display: flex;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
-.show {
-    display: flex;
+.menu-box-items.is-open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .hide {
@@ -122,8 +129,9 @@ header {
 
 h1 {
    font-weight: 400;
+   font-size: 3.4rem;
    /* text-shadow: 0 0 45px red; */
-   flex-basis: 25%;
+   flex-basis: 18%;
 
 }
 
@@ -179,6 +187,10 @@ section h2 {
     
     .btn-cta {
         font-size: 32px;
+    }
+
+    .menu-box-items {
+        width: 25%;
     }
 
     section h2 {

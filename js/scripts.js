@@ -6,11 +6,11 @@ const btnClose = document.querySelector('.btn-close');
 function clickHamburger(e) {
     
     if (e.target.innerText == 'menu') {
-        menuArea.classList.remove('hide');
+        menuArea.classList.add('is-open');
         btnClose.classList.remove('hide');
         btnHamburger.classList.add('hide');
     } else {
-        menuArea.classList.add('hide');
+        menuArea.classList.remove('is-open');
         btnClose.classList.add('hide');
         btnHamburger.classList.remove('hide');
     }   
