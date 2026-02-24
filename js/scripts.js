@@ -1,51 +1,27 @@
 'use strict';
+const menuArea = document.querySelector('.menu-box-items');
+const btnHamburger = document.querySelector('.btn-hamburger'); 
+const btnClose = document.querySelector('.btn-close'); 
 
-console.log('start');
-
-function clickHamburger() {
-    // alert('test');
-    const menuArea = document.querySelector('.menu-box-items');
-    // menuArea.style.display = 'flex';
-
-    menuArea.classList.remove('hide');
+function clickHamburger(e) {
+    
+    if (e.target.innerText == 'menu') {
+        menuArea.classList.remove('hide');
+        btnClose.classList.remove('hide');
+        btnHamburger.classList.add('hide');
+    } else {
+        menuArea.classList.add('hide');
+        btnClose.classList.add('hide');
+        btnHamburger.classList.remove('hide');
+    }   
 }
-
-const hamburger = document.querySelector('nav .material-icons');
+const hamburger = document.querySelector('nav .btn-hamburger');
 
 hamburger.addEventListener('click', clickHamburger);
 
-// function fn1() {
-//     console.log('sdfwefmnlksxmlk09809ujlksjelkqj');
-// }
+const myClose = document.querySelector('nav .btn-close');
 
-// let btnCta = document.querySelector('.box a');
+myClose.addEventListener('click', clickHamburger);
 
-// btnCta.addEventListener('click', () => {
-//     alert('ksjahfiuskhm,xnk');
-// });
 
-// console.log(btnCta);
-
-let form1 = document.getElementById('form1');
-let resPlace = document.getElementById('result');
-
-form1.addEventListener('submit', function(event) {
-    
-    let num1 = +document.getElementById('num1').value;
-    let num2 = +document.getElementById('num2').value;
-    event.preventDefault();
-    let res = num1 + num2;
-    console.log(res);
-    resPlace.innerText = res;
-
-})
-
-// function calc(event) {
-//     event.preventDefault();
-//     let num1 =document.getElementById('num1').value;
-//     let num2 = document.getElementById('num2').value;
-//     console.log(num1 * num2);
-// }
-
-console.log('end');
 
