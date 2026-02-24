@@ -23,5 +23,12 @@ const myClose = document.querySelector('nav .btn-close');
 
 myClose.addEventListener('click', clickHamburger);
 
+const menuLinks = document.querySelectorAll('.menu-box-items a');
+
+menuLinks.forEach((elem) => {
+    elem.addEventListener('click', clickHamburger);
+})
+
+
 
 

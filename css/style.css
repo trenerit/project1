@@ -8,6 +8,10 @@
     font-family: "Kanit", sans-serif;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 10px;
 }
