@@ -5,7 +5,9 @@ console.log('start');
 function clickHamburger() {
     // alert('test');
     const menuArea = document.querySelector('.menu-box-items');
-    menuArea.style.display = 'flex';
+    // menuArea.style.display = 'flex';
+
+    menuArea.classList.remove('hide');
 }
 
 const hamburger = document.querySelector('nav .material-icons');
