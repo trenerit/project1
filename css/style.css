@@ -166,17 +166,28 @@ a {
 
 section {
     min-height: 80vh;
-    padding-top: 90px;
+    /* padding-top: 90px; */
 }
 
 section:nth-of-type(even) {
+    position: relative;
     /* background-color: gray; */
-    background: url('../assets/img/gory_alpy.webp') center/cover fixed;
+    background: url('../assets/img/bg_header_2.jpg') center/cover fixed;
+    color: whitesmoke;
+}
+
+section:nth-of-type(even) h2 {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
 }
 
 section h2 {
     text-align: center;
     font-size: 3rem;
+    padding-top: 90px;
+    letter-spacing: 3px;
 }
 
 @media all and (min-width:800px)  {
