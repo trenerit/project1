@@ -270,6 +270,18 @@ p {
     margin: 0;
 }
 
+footer {
+    background-color: #243248;
+    color: whitesmoke;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+}
+
 @media all and (min-width:800px)  {
     h1 {
         flex-basis: 15%;
@@ -286,5 +298,9 @@ p {
 
     section h2 {
         font-size: 4.5rem;
+    }
+
+    footer p {
+        text-align: left;
     }
 }
