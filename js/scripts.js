@@ -29,6 +29,12 @@ menuLinks.forEach((elem) => {
     elem.addEventListener('click', clickHamburger);
 })
 
+const btnBox1 = document.querySelector('.btn-box');
+
+btnBox1.addEventListener('click', () => {
+    document.querySelector('.modal-window').style.display = 'flex';
+})
+
 
 
 
