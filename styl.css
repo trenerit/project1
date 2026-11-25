@@ -3,50 +3,76 @@ body {
     margin: 0;
 }
 
-.box {
-    height: 350px;
-    display: flex;
-}
-
 header {
+    height: 250px;
     background-color: aqua;
-    border: 1px solid red;
-    height: 100%;
-    width: 50%;
 }
 
 main {
+    height: 600px;
     display: flex;
-    height: 500px;
 }
 
 aside {
-    background-color: blue;
     height: 100%;
     width: 25%;
+    background-color: yellow;
 }
 
-section {
-    background-color: brown;
+.box {
     height: 100%;
     width: 75%;
-}
-
-article {
-    height: 50%;
-    width: 100%;
-}
-
-article:nth-of-type(1) {
-    background-color: chartreuse;
-}
-
-article:nth-of-type(2) {
-    background-color: coral;
+    background-color: crimson;
 }
 
 footer {
-    height: 200px;
-    background-color: aquamarine;
+    height: 180px;
+    background-color: aliceblue;
+    display: flex;
 }
 
+footer article {
+    width: 33.3333%;
+    height: 100%;
+    background-color: blue;
+}
+
+.a1 {
+    background-color: blueviolet;
+}
+
+.a2 {
+    background-color: gray;
+}
+
+.a3 {
+    background-color: coral;
+}
+
+.c1 {
+    background-color: black;
+    height: 33.3333%;
+}
+
+.c2 {
+    background-color: white;
+    height: 33.3333%;
+    display: flex;
+}
+
+.c3 {
+    background-color: red;
+    height: 33.3333%;
+}
+
+.c2 article:nth-of-type(1) {
+    background-color: darkorange;
+    width: 50%;
+    height: 100%;
+}
+
+.c2 article:nth-of-type(2) {
+    background-color: darkslateblue;
+    width: 50%;
+    height: 100%;
+}
